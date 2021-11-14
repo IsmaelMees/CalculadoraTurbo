@@ -15,10 +15,27 @@ O sistema de entrada de valor;
     printf ("%c\n", v);
 
 Esse valor sofre processamento em:
-  case '+':
+  switch (v)
+{
+   case '+':
     contagem = (valor0+valor1);
-    
+    printf ("%f %c %f = %f \n\n",valor0,v,valor1,contagem);
+    break;
 
+    case '-':
+    contagem = (valor0-valor1);
+    printf ("%f %c %f = %f \n\n",valor0,v,valor1,contagem);
+    break;
+
+    case '*':
+    contagem = (valor0*valor1);
+    printf ("%f %c %f = %f \n\n",valor0,v,valor1,contagem);
+    break;
+
+    case '/':
+    contagem = (valor0/valor1);
+    printf ("%f %c %f = %f \n\n",valor0,v,valor1,contagem);
+    break;
 O valor retorna em;
   printf ("%f %c %f = %f \n\n",valor0,v,valor1,contagem);
     break;
